@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ot-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+    <h1>Descubra a sua nacionalidade!</h1>
+    Qual o seu país de origem?
+    <input type="text" id="pais" size="20">
+    <input type="button" value="verificar" onclick="nacio()">
+    <div id="resul"></div>
+    <script>
+        function nacio(){
+            var nacionalidade = document.getElementById('pais')
+            var resultado = document.getElementById('resul')
+            if (nacionalidade == 'Brail'){
+                resultado.innerHTML = `<p><strong> Parabéns vc é um fudido de um brasileiro<strong><p>`
+            } else{
+                resultado.innerHTML = `<p><strong> Parabéns vc é um fudido de outro lugar<strong><p>`
+            }
+        }
+    </script>
+</body>
+</html>
